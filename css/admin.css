@@ -1,0 +1,8 @@
+.updated.woocommerce-message,
+.rs-update-notice-wrap, 
+.eg-update-notice-wrap,
+.post-type-page #mm_general,
+.layerslider_notice{ display: none!important; }
+.mt-patterns { width: 50px!important; height: 50px!important; }
+
+.post-type-page #mm_general { display: none!important; }
