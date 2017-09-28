@@ -53,11 +53,8 @@ include_once ('functions/functions-hooks.php');
 include_once ('functions/functions-comment.php');
 include_once ('functions/functions-shortcodes.php');
 include_once ('functions/functions-general.php');
-#include_once ('functions/import/madza-export.php');
-include_once ('functions/import/madza-import.php');
 #require_once (OF_FILEPATH . '/functions/plugins/bread/functions-other.php');
 include_once ('functions/plugins/aq_resizer.php');
-#require_once (OF_FILEPATH . '/functions/plugins/easy-wordpress-donations/easy-wordpress-donation.php');
 
 
 
@@ -291,7 +288,7 @@ function my_theme_register_required_plugins() {
             'slug'			=> 'js_composer', // The plugin slug (typically the folder name)
             'source'			=> get_stylesheet_directory() . '/all_plugins/js_composer.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
-            'version'			=> '5.0.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'			=> '5.2.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
@@ -301,7 +298,7 @@ function my_theme_register_required_plugins() {
             'slug'			=> 'LayerSlider', // The plugin slug (typically the folder name)
             'source'			=> get_stylesheet_directory() . '/all_plugins/LayerSlider.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
-            'version'			=> '6.1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'			=> '6.5.8', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
@@ -315,7 +312,23 @@ function my_theme_register_required_plugins() {
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
-        )
+        ),
+        array(
+        			'name'     				=> esc_html__( "One Click Demo Import","rimi" ), // The plugin name
+        			'slug'     				=> 'one-click-demo-import', // The plugin slug (typically the folder name)
+        			'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
+              'force_activation'		=> false,
+        ),
+				array(
+            'name'			=> esc_html__( "Envato Market (One Click Updates)","rimi" ), // The plugin name
+            'slug'			=> 'envato-market', // The plugin slug (typically the folder name)
+            'source'			=> get_template_directory() . '/all_plugins/envato-market.zip', // The plugin source
+            'required'			=> true, // If false, the plugin is only 'recommended' instead of required
+            'version'			=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+            'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+            'external_url'		=> '', // If set, overrides default API URL and points to an external URL
+        ),
     );
 
     // Change this to your theme text domain, used for internationalising strings
