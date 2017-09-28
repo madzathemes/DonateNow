@@ -5,8 +5,9 @@
  */
 
 get_header(); 
-?>
 
+
+?>
 <div class="row">
 <div class="span8 floatleft">
 										<?php if ( have_posts() ) : ?>
